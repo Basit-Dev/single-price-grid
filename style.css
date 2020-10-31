@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Karla", sans-serif;
+  font-size: 62.5%;
+}
+body {
+  background: hsl(218, 22%, 67%);
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  padding: 15%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.top_header {
+  background: hsl(204, 43%, 93%);
+  border-radius: 10px 10px 0 0;
+  padding: 6rem;
+  width: 80%;
+  margin: auto;
+}
+.top_header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: hsl(179, 62%, 43%);
+  letter-spacing: -1px;
+  margin-bottom: 2rem;
+}
+.top_header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 1.5rem;
+}
+.top_header p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: hsl(218, 22%, 67%);
+  line-height: 1.5;
+}
+.subscription {
+  background: hsl(179, 62%, 43%);
+  color: #ffffff;
+  border-radius: 0 0 0 10px;
+  padding: 6em;
+  width: 50%;
+}
+.sub_info h2,
+.article_info h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(204, 43%, 93%);
+  letter-spacing: 0.5px;
+  margin-bottom: 3rem;
+}
+.sub_info p {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: hsl(204, 43%, 93%);
+  letter-spacing: 0.5px;
+  margin-bottom: 4rem;
+}
+.sub_info h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: hsl(204, 43%, 93%);
+  letter-spacing: 0.5px;
+  margin-bottom: 2rem;
+}
+.sub_info h3 span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: hsl(204, 43%, 93%);
+  letter-spacing: 0.5px;
+}
+.signup_cta {
+  background: hsl(71, 73%, 54%);
+  color: hsl(218, 22%, 67%);
+  font-size: 1.5rem;
+  border: none;
+  padding: 2rem 0;
+  width: 100%;
+}
+.bottom_header {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.article {
+  background-color: hsl(179, 47%, 50%);
+  color: hsl(204, 43%, 93%);
+  border-radius: 0 0 10px 10px;
+  padding: 6em;
+  width: 50%;
+}
+.article_info li {
+  list-style-type: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: hsl(204, 43%, 93%);
+  letter-spacing: 0.4px;
+  margin-bottom: 1rem;
+}
+.attribution {
+  text-align: center;
+  margin: 2rem;
+}
+@media only screen and (max-width: 790px) {
+  .container {
+    margin: 2rem 0;
+    padding: 2rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0%);
+  }
+  .top_header,
+  .subscription,
+  .article {
+    padding: 3rem;
+  }
+  .bottom_header {
+    display: flex;
+    flex-direction: column;
+  }
+  .subscription,
+  .article {
+    width: 100%;
+  }
+}
