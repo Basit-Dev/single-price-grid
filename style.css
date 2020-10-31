@@ -15,18 +15,21 @@ body {
   width: 100vw;
 }
 .container {
-  padding: 15%;
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.wrapper {
+  width: 60%;
+  margin: auto;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
+}
 .top_header {
   background: hsl(204, 43%, 93%);
   border-radius: 10px 10px 0 0;
   padding: 6rem;
-  width: 80%;
-  margin: auto;
+  width: 100%;
 }
 .top_header h1 {
   font-size: 2.5rem;
@@ -87,13 +90,13 @@ body {
   color: hsl(218, 22%, 67%);
   font-size: 1.5rem;
   border: none;
+  border-radius: 5px;
   padding: 2rem 0;
   width: 100%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 .bottom_header {
   display: flex;
-  width: 80%;
-  margin: auto;
 }
 .article {
   background-color: hsl(179, 47%, 50%);
@@ -116,12 +119,17 @@ body {
 }
 @media only screen and (max-width: 790px) {
   .container {
-    margin: 2rem 0;
+    margin: 2rem 1rem;
     padding: 2rem;
     position: relative;
     top: 0;
     left: 0;
     transform: translate(0%);
+  }
+  .wrapper {
+    width: 100%;
+    margin: auto;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
   }
   .top_header,
   .subscription,
